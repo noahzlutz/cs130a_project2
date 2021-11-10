@@ -75,5 +75,9 @@ int Heap<T>::get_size(){
     return size;
 }
 
+template <class T>
+T Heap<T>::get_root(){
+    return heap[0];
+}
 
 #endif

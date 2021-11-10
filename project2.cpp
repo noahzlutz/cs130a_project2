@@ -7,7 +7,7 @@
 
 int main( int argc, char** argv ){
     
-    bool (*compare)(int,int) = Heap<int>::gt;
+    bool (*compare)(int,int) = Heap<int>::lt;
     
     Heap<int> h(compare);
 
@@ -22,6 +22,9 @@ int main( int argc, char** argv ){
         }
         inF.close();
 
+        cout<< "Min Heap:" << endl;
+        cout<< "Size = " << h.get_size() << endl;
+        cout<< "Min = " << h.get_root() << endl;
         
     }
 
