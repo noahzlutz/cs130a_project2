@@ -4,14 +4,18 @@
 #include <fstream>
 #include <string>
 
+using namespace std;
+
 
 int main( int argc, char** argv ){
     
+    cout<<"Yo"<<endl;
+
     bool (*compare)(int,int) = Heap<int>::lt;
     
     Heap<int> h(compare);
 
-    cout<<"Yo"<<endl;
+    
 
     if(argv[1] == "heap"){
         
