@@ -18,6 +18,8 @@ int main( int argc, char** argv ){
     
 
     if(argv[1] == "heap"){
+
+        cout<< "populating heap"<<endl;
         
         string line;
         ifstream inF;
@@ -27,6 +29,8 @@ int main( int argc, char** argv ){
             h.insert(stoi(line));
         }
         inF.close();
+
+        cout<< "populated heap"<<endl;
 
         cout<< "Min Heap:" << endl;
         cout<< "Size = " << h.get_size() << endl;
