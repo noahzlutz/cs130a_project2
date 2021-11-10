@@ -15,9 +15,10 @@ int main( int argc, char** argv ){
     
     Heap<int> h(compare);
 
+    string which_class = argv[1];
     
 
-    if(argv[1] == "heap"){
+    if(which_class == "heap"){
 
         cout<< "populating heap"<<endl;
         
