@@ -42,7 +42,7 @@ Heap<T>::Heap(bool (*compare)(T,T)): compare(compare),size(0){}
 
 template <class T>
 void Heap<T>::insert(T value){ ////TO DO
-    if(heap.size() == 0)){
+    if(heap.size() == 0){
         heap.push_back(value);
     }else{
         heap.push_back(value);
