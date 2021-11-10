@@ -72,7 +72,7 @@ void Heap<T>::remove(T num){ ////TO DO
 
 template <class T>
 int Heap<T>::get_size(){
-    return size;
+    return heap.size();
 }
 
 template <class T>
