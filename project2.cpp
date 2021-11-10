@@ -11,6 +11,8 @@ int main( int argc, char** argv ){
     
     Heap<int> h(compare);
 
+    cout<<"Yo"<<endl;
+
     if(argv[1] == "heap"){
         
         string line;
